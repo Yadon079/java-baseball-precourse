@@ -18,8 +18,15 @@ public class Judge {
         return result;
     }
 
-    public boolean hsaPlace(List<Integer> computer, int placeNumber, int number) {
-        return false;
+    public boolean hsaPlace(List<Integer> computer, int placeIndex, int number) {
+        return computer.get(placeIndex) == number;
+
+        // 위 한 줄과 같은 코드
+//        if(computer.get(placeIndex) == number) {
+//            return true;
+//        }
+//
+//        return false;
     }
 
 }

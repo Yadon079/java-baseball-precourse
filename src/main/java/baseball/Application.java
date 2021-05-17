@@ -20,7 +20,11 @@ public class Application {
 //        System.out.println(numbers);
 
         Judge judge = new Judge();
-        int count = judge.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
-        System.out.println(count);
+//        int count = judge.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
+//        System.out.println(count);
+
+        boolean place = judge.hsaPlace(Arrays.asList(7, 8, 9), 1, 7);
+        System.out.println(place);
+
     }
 }
