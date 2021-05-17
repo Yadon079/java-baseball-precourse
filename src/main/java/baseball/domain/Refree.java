@@ -21,6 +21,10 @@ public class Refree {
 
         int ball = correctCount - strike;
 
+        if(strike == 0) {
+            return "아웃";
+        }
+
         return ball + " 볼 " + strike + " 스트라이크";
     }
 

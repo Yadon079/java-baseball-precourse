@@ -17,7 +17,7 @@ import java.util.List;
 public class Application {
     public static void main(String[] args) {
         Refree refree = new Refree();
-        String result = refree.compare(Arrays.asList(3, 2, 5), Arrays.asList(1, 2, 3));
+        String result = refree.compare(Arrays.asList(7, 8, 9), Arrays.asList(1, 2, 3));
         System.out.println(result);
     }
 }
