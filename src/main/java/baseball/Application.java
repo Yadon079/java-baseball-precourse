@@ -2,6 +2,7 @@ package baseball;
 
 import baseball.domain.Judge;
 import baseball.domain.NumberGenerator;
+import baseball.domain.Refree;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,16 +16,8 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-//        NumberGenerator generator = new NumberGenerator();
-//        List<Integer> numbers = generator.createRandomNumber();
-//        System.out.println(numbers);
-
-        Judge judge = new Judge();
-//        int count = judge.correctCount(Arrays.asList(1, 2, 3), Arrays.asList(1, 2, 3));
-//        System.out.println(count);
-
-        boolean place = judge.hsaPlace(Arrays.asList(7, 8, 9), 1, 7);
-        System.out.println(place);
-
+        Refree refree = new Refree();
+        String result = refree.compare(Arrays.asList(3, 2, 5), Arrays.asList(1, 2, 3));
+        System.out.println(result);
     }
 }
